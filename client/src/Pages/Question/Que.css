@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(248, 248, 248);
+  font-family: "Lato", serif;
+}
+.container-wrapper {
+  background-color: #f1f1f1;
+  width: 250px;
+  height: 400px;
+  border-radius: 2px;
+  box-shadow: 5px 5px rgb(209, 211, 214);
+  margin-left: 10%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .container-wrapper {
+    width: 420px;
+    height: 400px;
+    margin-left: 120px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+.container-wrapper h3 {
+  color: #000;
+  font-weight: 600;
+  margin-top: 25px;
+  text-align: center;
+}
+.text-area-wrapper{
+text-align: center;
+}
+textarea {
+  border-color: rgb(209, 211, 214);
+  resize: none;
+  border-radius: 4px;
+}
+@media (min-width: 768px) {
+  textarea {
+    width: 300px;
+    margin-left: 50px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+}
+p {
+  text-align: center;
+}
+.container-wrapper a {
+  color: rgb(254, 132, 2);
+  text-align: center;
+}
+.container-wrapper button {
+  border-radius: 2px;
+  width: 150px;
+  height: 30px;
+  border-style: none;
+  padding-top: 10px;
+  line-height: 10px;
+}
+@media (min-width: 768px) {
+  /* .container-wrapper button {
+     width: 120px;
+
+  } */
+}
+.colorBlueCode {
+  background: #516cf0;
+}
+.colorOrangeCode {
+  background: #ff8500;
+}
+.colorOrangeSubmit {
+  background: #ff8500;
+}
+.colorBlueSubmit {
+  background: #516cf0;
+}
+::placeholder {
+  color: brg(102, 85, 85);
+  text-align: center;
+  font-size: 1em;
+  padding-top: 10px;
+}
+a:hover {
+  text-decoration: underline;
+}
+.button-area{
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .button-area {
+    display: flex;
+    width: 980px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+}
+.color {
+  background: #516cf0;
+}
+.color:hover {
+  background: #ff8500;
+}
+.color:active {
+  border: 2px solid #516cf0;
+}

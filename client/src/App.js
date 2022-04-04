@@ -4,8 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { UserContext } from './context/UserContext';
 import Header1 from './Header/Header1';
+import DashBoard from './Pages/Dashboard/DashBoard';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
+import Que from './Pages/Question/Que';
 import SignUp from './Pages/SignUp/SignUp';
 function App() {
   const [userData, setUserData] = useContext(UserContext);
@@ -42,14 +44,16 @@ function App() {
   return (
     <Router>
       <div>
-       <Header1/>
-       <SignUp/>
+        {/* <Header1/> */}
+        {/* <SignUp/>
         <Routes>
           <Route path="/signup" element={<SignUp /> } />
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home logout={logout}/>} />
-        </Routes>
+        </Routes> */}
       </div>
+      <DashBoard />
+      <Que />
     </Router>
   );
 }
